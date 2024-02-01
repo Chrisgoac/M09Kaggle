@@ -1,6 +1,23 @@
-<app-form></app-form>
+<div class="upload-file bg-light">
+    <app-form (newItemEvent)="getData($event)"></app-form>
+</div>
+<div class="plots-container">
+    <div class="fila">
+        <div class="columna">
+            <app-table [data]="currentData"></app-table>
+        </div>
+        <div class="columna">
+            <app-geograph></app-geograph>
+        </div>
+    </div>
+    <div class="fila">
+        <div class="columna">
+            <app-columns></app-columns>
+        </div>
+        <div class="columna">
+            <app-circular></app-circular>
+        </div>
+    </div>
+</div>
 
-<app-table></app-table>
-<app-columns></app-columns>
-<app-circular></app-circular>
-<app-geograph></app-geograph>
+

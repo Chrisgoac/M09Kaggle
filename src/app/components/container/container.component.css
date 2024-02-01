@@ -1,0 +1,8 @@
+.fila {
+    width: 100%;
+    display: inline-flex;
+}
+
+.columna {
+    width: 50%;
+}

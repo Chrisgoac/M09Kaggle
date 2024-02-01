@@ -1,1 +1,5 @@
-<p>form works!</p>
+<div class="p-3 text-center container">
+    <label class="h3 me-3" for="avatar">Upload file to analyze it:</label>
+
+    <input class="form-control" type="file" id="input-csv" name="input-csv" accept=".csv" (change)="uploadFile($event)" />
+</div>
