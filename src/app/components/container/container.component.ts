@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Covid } from 'src/app/models/covid';
 
 @Component({
   selector: 'app-container',
@@ -6,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./container.component.css']
 })
 export class ContainerComponent {
+  title = 'plots';
+  currentData: Covid[] = [];
+
+  getData(data: Covid[]) {
+    this.currentData = data;
+  }
 
 }

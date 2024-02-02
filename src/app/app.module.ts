@@ -8,6 +8,8 @@ import { CircularComponent } from './components/container/circular/circular.comp
 import { GeographComponent } from './components/container/geograph/geograph.component';
 import { FormComponent } from './components/container/form/form.component';
 import { ContainerComponent } from './components/container/container.component';
+import { CsvService } from './services/csv.service';
+import { SharedService } from './services/shared.service';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,7 @@ import { ContainerComponent } from './components/container/container.component';
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [CsvService, SharedService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

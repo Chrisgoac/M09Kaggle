@@ -1,13 +1,22 @@
-import { Component, Input } from '@angular/core';
-import { Covid, CovidModel } from 'src/app/models/covid';
+// table.component.ts
+import { Component, Input, OnInit } from '@angular/core';
+import { CsvService } from 'src/app/services/csv.service';
+import { Covid } from 'src/app/models/covid';
 
 @Component({
   selector: 'app-table',
   templateUrl: './table.component.html',
   styleUrls: ['./table.component.css']
 })
+export class TableComponent implements OnInit {
+  @Input() data: any[] | undefined;
+  tableData: Covid[] = [];
 
-export class TableComponent {
-  @Input() data: Covid[] = [];
-  headers = Object.keys(new CovidModel());
+  constructor(private csvService: CsvService) {}
+
+  ngOnInit() {
+    this.csvService.parsedData$.subscribe(parsedData => {
+      this.data = parsedData;
+    });
+  }
 }

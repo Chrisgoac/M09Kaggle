@@ -1,1 +1,18 @@
-<p>table works!</p>
+<!-- table.component.html -->
+<table>
+    <thead>
+      <tr>
+        <th>Country</th>
+        <th>Continent</th>
+        <!-- Agrega más encabezados según tus propiedades -->
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of data">
+        <td>{{ item.country }}</td>
+        <td>{{ item.continent }}</td>
+        <!-- Muestra más propiedades según tus necesidades -->
+      </tr>
+    </tbody>
+  </table>
+  
