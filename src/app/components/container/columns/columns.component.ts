@@ -8,7 +8,7 @@ import { Chart, registerables } from 'chart.js';
   styleUrls: ['./columns.component.css']
 })
 export class ColumnsComponent implements AfterViewInit {
-  @ViewChild('barChart', { static: false }) barChart?: ElementRef;
+  @ViewChild('circularChart', { static: false }) barChart?: ElementRef;
 
   ngAfterViewInit() {
     if (this.barChart) {

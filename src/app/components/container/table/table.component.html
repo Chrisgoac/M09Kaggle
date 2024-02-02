@@ -1,18 +1,20 @@
 <!-- table.component.html -->
-<table>
+<table class="table table-stripped">
     <thead>
       <tr>
         <th>Country</th>
         <th>Continent</th>
-        <!-- Agrega más encabezados según tus propiedades -->
+        <th>Total cases</th>
+        <th>Total deaths</th>
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let item of data">
+      <tr *ngFor="let item of data | slice:0:10">
         <td>{{ item.country }}</td>
         <td>{{ item.continent }}</td>
-        <!-- Muestra más propiedades según tus necesidades -->
+        <td>{{ item.totalCases }}</td>
+        <td>{{ item.totalDeaths }}</td>
       </tr>
     </tbody>
-  </table>
+</table>
   
