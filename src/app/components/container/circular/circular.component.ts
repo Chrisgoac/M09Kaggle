@@ -1,5 +1,5 @@
 import { Component, ElementRef, Input, OnInit, ViewChild } from '@angular/core';
-import { CsvService } from '../../../services/csv.service'; // Asegúrate de proporcionar la ruta correcta
+import { CsvService } from '../../../services/csv.service';
 import { Chart } from 'chart.js/auto';
 import { Covid } from 'src/app/models/covid';
 import { ChartConfiguration, registerables } from 'chart.js';

@@ -1,8 +1,22 @@
+/* Estilos generales para las filas y columnas */
 .fila {
-    width: 100%;
-    display: inline-flex;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .columna {
-    width: 50%;
+    flex: 1;
+    margin: 10px;
+}
+
+@media (max-width: 767px) {
+    .columna {
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) {
+    .columna {
+        width: 48%;
+    }
 }

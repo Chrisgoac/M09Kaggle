@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { GeographComponent } from './geograph.component';
+import { Columns2Component } from './columns2.component';
 
-describe('GeographComponent', () => {
-  let component: GeographComponent;
-  let fixture: ComponentFixture<GeographComponent>;
+describe('Columns2Component', () => {
+  let component: Columns2Component;
+  let fixture: ComponentFixture<Columns2Component>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [GeographComponent]
+      declarations: [Columns2Component]
     });
-    fixture = TestBed.createComponent(GeographComponent);
+    fixture = TestBed.createComponent(Columns2Component);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
